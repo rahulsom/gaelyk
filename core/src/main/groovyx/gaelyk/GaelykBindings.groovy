@@ -28,20 +28,20 @@ import org.codehaus.groovy.transform.GroovyASTTransformationClass
  * that are usually injected in your Groovlets and templates.
  * <p>
  * Example:
- * <pre><code>
+ * <pre>{@code
  *  import groovyx.gaelyk.GaelykBindings
  *
- *  // annotate your class with the transformation
- *  @GaelykBindings
- *  class WeblogService {
- *      def numberOfComments(post) {
- *          // the datastore service is available
- *          datastore.execute {
- *              select count from comments where postId == post.id
- *          }
- *      }
- *  }
- * </code></pre>
+ * // annotate your class with the transformation
+ * @GaelykBindings
+ * class WeblogService {
+ *     def numberOfComments(post) {
+ *         // the datastore service is available
+ *         datastore.execute {
+ *             select count from comments where postId == post.id
+ *             }
+ *         }
+ *     }
+ * }</pre>
  *
  * @author Vladimir Orany
  * @author Guillaume Laforge
